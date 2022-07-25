@@ -1,9 +1,19 @@
 .playerCard{
     width: 250px;
     height: 350px;
-    background: whitesmoke;
+    background: lightgray;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0px 10px 20px rgb(45 52 54 / 25%);
+    // box-shadow: 0px 10px 20px rgb(45 52 54 / 25%);
     margin: 10px;
+
+   
+    &__name{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    &__position{
+        font-size: 15px;
+     
+    }
 }

@@ -1,12 +1,14 @@
 
-import './playerCard.scss';
+import './PlayerCard.scss';
 
-const Home = () => {
+const PlayerCard = (props) => {
+  const {playerName, playerImage, playerPosition} = props;
   return (
     <div className="playerCard">
-   <h1>football</h1>
-   <h2>player</h2>
-   <h3>card</h3>
+  <img className='playerCard__image' src={playerImage} alt="player" />
+  <h1 className='playerCard__name'>{playerName}</h1>
+  <h2 className='playerCard__position'>{playerPosition}</h2>
+
     </div>
   );
 }
