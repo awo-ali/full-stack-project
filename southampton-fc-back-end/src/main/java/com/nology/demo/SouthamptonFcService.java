@@ -1,2 +1,4 @@
-package com.nology.demo;public class SouthamptonFcService {
+package com.nology.demo;
+
+public class SouthamptonFcService {
 }

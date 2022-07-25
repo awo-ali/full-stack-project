@@ -1,2 +1,13 @@
-package com.nology.demo;public interface SouthamptonFcRepository {
+package com.nology.demo;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface SouthamptonFcRepository  extends JpaRepository<SouthamptonFc, String> {
+
+
+
+
 }

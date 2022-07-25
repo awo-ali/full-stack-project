@@ -1,2 +1,4 @@
-package com.nology.demo;public class SouthamptonFcController {
+package com.nology.demo;
+
+public class SouthamptonFcController {
 }
