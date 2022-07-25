@@ -1,22 +1,23 @@
-
+import React  from "react";
 import './PlayerCardList.scss';
+import PlayerCard from "../PlayerCard/PlayerCard";
 
-const PlayerCardList = () => {
+const PlayerCardList = ({players}) => {
 
-    // const cardArr = (beers) => {
-    //     return beers.map((beers) => (
-    //       <Card
-    //         beerImage={beers.image_url}
-    //         nameTag={beers.name}
-    //         tagline={beers.tagline}
-    //         beer={beers}
-    //       />
-    //     ));
-    //   };
+    const playerCardArr = (players) => {
+        return players.map((players) => (
+          <PlayerCard
+            playerImage={players.image}
+            playerName={players.name}
+            playerPosition={players.position}
+            players={players}
+          />
+        ));
+      };
 
   return (
-    <div className="playerCardList">
-   {/* {cardArr(beers)}  */}
+    <div className="playerCardContainer" players={players}>
+   {playerCardArr(players)} 
     </div>
   );
 }
