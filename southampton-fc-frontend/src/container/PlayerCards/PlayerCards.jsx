@@ -1,10 +1,12 @@
-
+import React from 'react';
 import './PlayerCards.scss';
+import PlayerCardList from '../../component/PlayerCardList/PlayerCardList';
 
-const PlayerCards = () => {
+const PlayerCards = ({players}) => {
   return (
     <div className="playerCards">
-   <h1>Player Cards</h1>
+  <PlayerCardList players={players}/>
+  
     </div>
   );
 }
