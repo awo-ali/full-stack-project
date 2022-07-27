@@ -20,15 +20,11 @@ const Navbar = () => {
         src={menu}
         alt="menu-icon"
       />
-      {toggleMenu && (
+      {toggleMenu && 
         <Menu
-          className="navbar_toggle"
           toggleMenuContent={toggleMenuContent}
-          // link1="/home"
-          // link2="/playerCards"
-          // link3="/seasonStats"
         />
-      )}
+      }
     </div>
   );
 };
