@@ -34,14 +34,14 @@ public class PlayersService {
         return player;
 
     }
-//Player findPlayerByName(String name){
-//    List<Player> players = playersRepository.findBy(name);
-//     if (player == null){
-//            throw new PlayerNotFoundException();
-//        }
-//        return player;
-//
-//    }
+    Player deletePlayerById(String id){
+        Player deletePlayer = playersRepository.findByid(id);
+        if (deletePlayer == null){
+            throw new PlayerNotFoundException();
+        }
+        return deletePlayer;
+    }
+
 
 
 

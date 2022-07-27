@@ -3,6 +3,7 @@ package com.nology.demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -42,17 +43,6 @@ public class PlayersController {
 
     }
 
-//    @GetMapping("/player/card")
-//    public String getPlayerByName(@RequestParam String name) {
-//        Player player = playersService.findPlayerByName(name);
-//      return  ResponseEntity.status(HttpStatus.FOUND).body(player);
-
-//    @RequestMapping("/player/card/{id}")
-//        public ResponseEntity<Player> getPlayerByName(@PathVariable(value="id") String id, @RequestParam String name) {
-//        Player player = playersService.findPlayerByName(name);
-//        return ResponseEntity.status(HttpStatus.FOUND).body(player);
-//
-//    }
 
     @GetMapping("/random")
     public ResponseEntity<Player> getRandomPlayer() {
@@ -60,8 +50,22 @@ public class PlayersController {
         return ResponseEntity.status(HttpStatus.FOUND).body(randomPlayer);
     }
 
+    @PostMapping("/player")
+    public String createPlayer(@RequestBody Player player) {
+        System.out.println(player);
+        playersRepository.save(player);
+        return ResponseEntity.status(HttpStatus.CREATED).body("Created Player with id : ") + player.getId();
 
 
+    }
+    @DeleteMapping("/player/{id}")
+    @Transactional
+    public ResponseEntity<String> deletePlayerById(@PathVariable String id) {
+        playersService.deletePlayerById(id);
+        return ResponseEntity.status(HttpStatus.FOUND).body("DELETED PLAYER");
+
+
+    }
 
 
 }
