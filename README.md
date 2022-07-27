@@ -22,4 +22,4 @@ Requirements
 
 Completed project below !!
 
-<img src="src/assets/images/full-stack-home%20.png"/>
+<img src="src/assets/images/full-stack-home.png"/>
