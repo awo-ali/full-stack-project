@@ -7,12 +7,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class SouthamptonFc {
+public class Player {
 @Id
 @GeneratedValue(generator = "system-uuid")
 @GenericGenerator(name="system-uuid", strategy = "uuid")
     private String id;
     private String name;
+    private String image;
     private String position;
     private String nationality;
     private String dateOfBirth;
@@ -21,12 +22,14 @@ public class SouthamptonFc {
     private String goals;
     private String assists;
 
-    public SouthamptonFc() {
+
+    public Player() {
     }
 
-    public SouthamptonFc(String id, String name, String position, String nationality, String dateOfBirth, String height, String appearances, String goals, String assists) {
+    public Player(String id, String name, String image, String position, String nationality, String dateOfBirth, String height, String appearances, String goals, String assists) {
         this.id = id;
         this.name = name;
+        this.image = image;
         this.position = position;
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
@@ -51,6 +54,10 @@ public class SouthamptonFc {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getImage() { return image; }
+
+    public void setImage(String image) { this.image = image;}
 
     public String getPosition() {
         return position;
