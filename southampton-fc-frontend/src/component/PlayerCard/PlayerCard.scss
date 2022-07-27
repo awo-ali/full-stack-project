@@ -1,19 +1,109 @@
-.playerCard{
-    width: 250px;
-    height: 350px;
-    background: lightgray;
-    border-radius: 5px;
-    text-align: center;
-    // box-shadow: 0px 10px 20px rgb(45 52 54 / 25%);
-    margin: 10px;
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 350px;
+  margin: 10px;
 
-   
-    &__name{
-        font-size: 20px;
-        font-weight: bolder;
-    }
-    &__position{
-        font-size: 15px;
-     
-    }
+  perspective: 1000px;
+  &__name {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  &__position {
+    font-size: 15px;
+  }
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgba(248, 245, 245, 0.527);
+}
+
+.flip-card-back {
+  background-color: whitesmoke;
+  transform: rotateY(180deg);
+  border-top: 4px solid red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__nationality {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 4px;
+  }
+  &__assists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 4px;
+  }
+
+  &__birth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 4px;
+  }
+
+  &__height {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 4px;
+  }
+
+  &__appearance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 4px;
+  }
+
+  &__goals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 4px;
+  }
+
+  &__stats {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 280px;
+    width: 220px;
+  }
+
+  &__title {
+    padding: 10px;
+  }
 }
