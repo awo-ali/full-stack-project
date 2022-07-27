@@ -23,3 +23,4 @@ Requirements
 Completed project below !!
 
 <img src="src/assets/images/full-stack-home.png"/>
+![](images/full-stack-home.png)
