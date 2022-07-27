@@ -1,0 +1,64 @@
+.log-form {
+  width: 510px;
+  background: #fff;
+  margin: 20px auto;
+
+  form {
+    display: block;
+    width: 50px;
+    padding: 2em;
+    width: 500px;
+    background: white;
+    border: 1px solid black;
+  }
+
+  h1 {
+    width: 100%;
+    color: lighten(black, 20%);
+    font-family: "open sans condensed";
+    font-size: 1.35em;
+    display: block;
+    background: lightgray;
+    padding: 0.75em 1em 0.75em 1.5em;
+    box-shadow: inset 0px 1px 1px fadeout(white, 95%);
+    border: 1px solid darken(grey, 5%);
+    margin: 0;
+    font-weight: 200;
+    border: 1px solid black;
+  }
+
+  input {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 0.5em 0;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1.25em;
+    color: #757575;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    background: red;
+    border: 1px solid darken(grey, 5%);
+    padding: 0.5em 2em;
+    color: white;
+    margin-right: 0.5em;
+    box-shadow: inset 0px 1px 0px fadeout(white, 80%);
+    &:hover {
+      background: lighten(rgb(97, 89, 89), 5%);
+    }
+    &:active {
+      background: red;
+      box-shadow: inset 0px 1px 1px fadeout(rgb(170, 6, 6), 90%);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
