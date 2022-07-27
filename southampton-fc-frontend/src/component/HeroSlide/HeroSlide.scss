@@ -1,0 +1,69 @@
+@import '../../assets/sass/mixins';
+
+.hero-slide{
+    @include flex-r-center;
+    width: 100%;
+    height:calc(100vh - 60px);
+    position: relative;
+    padding:15px;
+    &__bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        filter: brightness(0.7) contrast(0.9);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__caption{
+        text-align: center;
+        position: relative;
+        h2{
+            font-size:2.2rem;
+            text-transform:uppercase;
+            color: white;
+        }
+        p{
+            margin-top:20px;text-transform: capitalize;
+            color: white;
+        }
+    }
+    @media only screen and (min-width: 800px) {
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size:1.2rem;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        h2{
+            font-size: 3.6rem;
+        }
+        p{
+            font-size:1.4rem;
+        }
+    }
+}
+.hero-slide__controls{
+    display: flex;
+    gap:30px;
+    position: absolute;
+    bottom: 20px;
+    .controls__item{
+        width:14px;
+        height:14px;
+        border-radius:50%;
+        background-color: white;
+        opacity: 0.5;
+        transition:all 320ms ease-in-out;
+    }
+    .control-selected{
+        @include shadow-elevation-4;
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
