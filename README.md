@@ -22,5 +22,6 @@ Requirements
 
 Completed project below !!
 
-<img src="southampton-fc-fronten/src/assets/images/full-stack-home.png"/>
+<img src="southampton-fc-frontend/src/assets/images/full-stack-home.png"/>
 <img src="southampton-fc-frontend/src/assets/images/full-stack-playerCards.png"/>
+<img src="southampton-fc-frontend/src/assets/images/full-stack-add-card.png"/>
