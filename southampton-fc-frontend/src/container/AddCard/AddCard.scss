@@ -1,0 +1,33 @@
+.addCard {
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+
+  &__official-site {
+    color: red;
+    font-weight: 600;
+    padding: 20px;
+  
+  }
+     
+  &__styling{
+    color: red;
+    text-decoration: underline;
+}
+
+  &__linkedin {
+    height: 34px;
+    width: 34px;
+  }
+  &__links{
+    padding-left: 20px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+ 
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+}
