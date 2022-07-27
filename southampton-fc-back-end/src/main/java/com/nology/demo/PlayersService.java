@@ -36,8 +36,10 @@ public class PlayersService {
     }
     Player deletePlayerById(String id){
         Player deletePlayer = playersRepository.findByid(id);
-        if (deletePlayer == null){
+        if (deletePlayer == null) {
             throw new PlayerNotFoundException();
+        } else {
+            playersRepository.deleteById(id);
         }
         return deletePlayer;
     }
