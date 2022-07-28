@@ -14,8 +14,8 @@ const PlayerCard = (props) => {
   } = props;
   return (
     <div className="flip-card">
-      <div className="flip-card-inner">
-        <div className="flip-card-front">
+      <div className="flip-card__inner">
+        <div className="flip-card__front">
           <img className="flip-card__image" src={playerImage} alt="player" />
           <h1 className="flip-card__name">{playerName}</h1>
           <h2 className="flip-card__position">{playerPosition}</h2>
@@ -29,24 +29,24 @@ const PlayerCard = (props) => {
             </div>
             <div className="flip-card-back__birth">
               <p>D.O.B</p>
-              <p > {playerBirth}</p>
+              <p> {playerBirth}</p>
             </div>
             <div className="flip-card-back__height">
               <p>Height</p>
-              <p className="flip-card-back__p"> {playerHeight}</p>
+              <p> {playerHeight}</p>
             </div>
             <div className="flip-card-back__appearance">
               <p>Appearances</p>
-              <p className="flip-card-back__p"> {playerApperances}</p>
+              <p> {playerApperances}</p>
             </div>
             <div className="flip-card-back__goals">
               <p>Goals</p>
-              <p className="flip-card-back__p"> {playerGoals}</p>
+              <p> {playerGoals}</p>
             </div>
             <div>
               <div className="flip-card-back__assists">
-              <p>Assists</p>
-              <p className="flip-card-back__p"> {playerAssists}</p>
+                <p>Assists</p>
+                <p> {playerAssists}</p>
               </div>
             </div>
           </div>
