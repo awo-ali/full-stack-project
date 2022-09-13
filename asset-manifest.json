@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/full-stack-project/static/css/main.9659a31d.css",
+    "main.js": "/full-stack-project/static/js/main.940e7cde.js",
+    "static/js/787.675dd4f5.chunk.js": "/full-stack-project/static/js/787.675dd4f5.chunk.js",
+    "static/media/southampton-logo.png": "/full-stack-project/static/media/southampton-logo.c42a7bb8838a1530c8f8.png",
+    "static/media/Linkedin-Logo.png": "/full-stack-project/static/media/Linkedin-Logo.42b40d9ca13f442bef35.png",
+    "index.html": "/full-stack-project/index.html",
+    "main.9659a31d.css.map": "/full-stack-project/static/css/main.9659a31d.css.map",
+    "main.940e7cde.js.map": "/full-stack-project/static/js/main.940e7cde.js.map",
+    "787.675dd4f5.chunk.js.map": "/full-stack-project/static/js/787.675dd4f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9659a31d.css",
+    "static/js/main.940e7cde.js"
+  ]
+}
